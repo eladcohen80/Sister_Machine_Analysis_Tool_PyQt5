@@ -816,17 +816,17 @@ class CorrectionWindow(QMainWindow):
         sv.addWidget(lbl("── Add Cell ──", "#44cc88", 12, True))
 
         # click-add (detected cells)
-        self._btn_click = self._make_btn("🖱 Click Detected Cell", self._mode_click_add, "#226644")
+        self._btn_click = self._make_btn("🖱️ Click Detected Cell", self._mode_click_add, "#226644")
         self._btn_click.setToolTip("Click on any detected cell (blue outline) to add it to chosen")
         sv.addWidget(self._btn_click)
 
         # two-point
-        self._btn_two = self._make_btn("⊕ Two-Point Capsule  [T]", self._mode_two_point, "#226644")
+        self._btn_two = self._make_btn("⚯ Two-Point Capsule  [T]", self._mode_two_point, "#226644")
         self._btn_two.setToolTip("Click top endpoint, then bottom endpoint.\nAuto-builds a capsule mask.")
         sv.addWidget(self._btn_two)
 
         # polygon
-        self._btn_poly = self._make_btn("✏ Draw Polygon  [P]", self._mode_polygon, "#226644")
+        self._btn_poly = self._make_btn("⭔ Draw Polygon  [P]", self._mode_polygon, "#226644")
         self._btn_poly.setToolTip(
             "Click to place anchor points.\nDouble-click or Right-click to close.\n"
             "You can drag anchors before closing."
